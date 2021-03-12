@@ -7,6 +7,8 @@
 
 .container-1 {
   text-align: center;
+  width: 75%;
+  margin: 0 auto;
 }
 
 .container-1 h2 {
@@ -93,5 +95,34 @@
   font-size: 18px;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
+}
+
+.container-3 {
+  text-align: center;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.container-3 h2 {
+  font-size: 45px;
+}
+
+.container-3 .flex-box-rps {
+  background-color: whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 30px;
+  padding: 10px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container-3 .flex-box-rps img:hover {
+  font-size: 50px;
+  -webkit-box-shadow: 0px 10px 50px #2532e9;
+          box-shadow: 0px 10px 50px #2532e9;
 }
 /*# sourceMappingURL=main.css.map */

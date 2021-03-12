@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Challenge</title>
     <link rel="stylesheet" href="assets/css/main.css" />
+    
   </head>
   <body>
+    <div id="lottie"></div>
     <div class="container-1">
       <h2>Challenge 1: Your Age in Days</h2>
       <div class="flex-box-container-1">
@@ -18,15 +20,46 @@
         <div id="flex-box-result"></div>
       </div>
     </div>
+
     <div class="container-2">
       <h2>Challenge 2: Cat Generator</h2>
-      <button class="btn3" id="cat-generator" onclick="generateCat()">Generate Cat</button>
+      <button class="btn3" id="cat-generator" onclick="generateCat()">
+        Generate Cat
+      </button>
       <div class="flex-box-container-2" id="flex-cat-gen">
         <!-- <img src="https://thecatapi.com/api/images/get?format=src&type=gif&size=small" alt=""> -->
-        
       </div>
     </div>
 
+    <div class="container-3">
+      <h2>Challenge 3: Rock, Paper, Scissors</h2>
+      <div class="flex-box-rps" id="flex-box-rps-div">
+        <img
+          src="assets/images/rock.png"
+          id="rock"
+          alt="rock"
+          height="150"
+          width="150"
+          onclick="rpsGame(this)"
+        />
+        <img
+          src="assets/images/paper.svg"
+          id="paper"
+          alt="paper"
+          height="150"
+          width="150"
+          onclick="rpsGame(this)"
+        />
+        <img
+          src="assets/images/scissors.png"
+          id="scissors"
+          alt="scissors"
+          height="150"
+          width="150"
+          onclick="rpsGame(this)"
+        />
+      </div>
+    </div>
     <script src="assets/js/app.js"></script>
   </body>
 </html>
