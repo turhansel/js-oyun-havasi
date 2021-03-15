@@ -6,34 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Challenge</title>
     <link rel="stylesheet" href="assets/css/main.css" />
-    
   </head>
   <body>
-    <div id="lottie"></div>
-    <div class="container-1">
+    <!-- <div class="svg">
+      <svg
+        viewBox="0 0 1440 200"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+      >
+        <path
+          fill="null"
+          d="M 0 200 C 365.5 200 365.5 110 731 110 L 731 110 L 731 0 L 0 0 Z"
+          stroke-width="0"
+        ></path>
+        <path
+          fill="null"
+          d="M 730 110 C 1085 110 1085 0 1440 0 L 1440 0 L 1440 0 L 730 0 Z"
+          stroke-width="0"
+        ></path>
+      </svg>
+    </div> -->
+
+    <div class="cnt container-1">
       <h2>Challenge 1: Your Age in Days</h2>
-      <div class="flex-box-container-1">
-        <div><button class="btn1" onclick="ageInDays()">Click me!</button></div>
-        <div><button class="btn2" onclick="reset()">Reset</button></div>
+      <div class="flx flex-box-container-1">
+        <div>
+          <button class="btn green" onclick="ageInDays()">Click me!</button>
+        </div>
+        <div>
+          <button class="btn red" onclick="reset()">Reset</button>
+        </div>
       </div>
-      <div class="flex-box-container-1">
+      <div class="flx flex-box-container-1">
         <div id="flex-box-result"></div>
       </div>
     </div>
 
-    <div class="container-2">
+    <div class="cnt container-2">
       <h2>Challenge 2: Cat Generator</h2>
-      <button class="btn3" id="cat-generator" onclick="generateCat()">
+      <button class="btn green" id="cat-generator" onclick="generateCat()">
         Generate Cat
       </button>
-      <div class="flex-box-container-2" id="flex-cat-gen">
+      <div class="flx flex-box-container-2" id="flex-cat-gen">
         <!-- <img src="https://thecatapi.com/api/images/get?format=src&type=gif&size=small" alt=""> -->
       </div>
     </div>
 
-    <div class="container-3">
+    <div class="cnt container-3">
       <h2>Challenge 3: Rock, Paper, Scissors</h2>
-      <div class="flex-box-rps" id="flex-box-rps-div">
+      <div class="flx flex-box-rps" id="flex-box-rps-div">
         <img
           src="assets/images/rock.png"
           id="rock"
@@ -58,6 +79,29 @@
           width="150"
           onclick="rpsGame(this)"
         />
+      </div>
+    </div>
+    <div class="cnt container-4">
+      <h2 id="change-my-color">Challenge 4: Change the Color of All Buttons</h2>
+      <div class="flx flex-box-pick-color">
+        <form action="">
+          <select
+            name="backdrop"
+            id="background"
+            onchange="buttonColorChange(this)"
+          >
+            <option value="random">Random</option>
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+            <option value="reset">Reset</option>
+            
+          </select>
+        </form>
+        <button class="btn blue">Twitter!</button>
+        <button class="btn red">Yahoo!</button>
+        <button class="btn yellow">Google!</button>
+        <button class="btn green">Facebook!</button>
       </div>
     </div>
     <script src="assets/js/app.js"></script>
