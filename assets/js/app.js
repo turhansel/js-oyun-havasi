@@ -19,8 +19,13 @@ function reset() {
 function generateCat() {
     var image = document.createElement('img');
     var div = document.getElementById('flex-cat-gen');
+    image.setAttribute('id', 'catcat')
     image.src = "https://thecatapi.com/api/images/get?format=src&type=gif&size=small"
     div.appendChild(image);
+}
+function silsile(){
+    document.getElementById('catcat').remove();
+    
 }
 
 // Challenge3: Rock, Paper, Scissors
