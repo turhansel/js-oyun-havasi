@@ -8,25 +8,6 @@
     <link rel="stylesheet" href="assets/css/main.css" />
   </head>
   <body>
-    <!-- <div class="svg">
-      <svg
-        viewBox="0 0 1440 200"
-        xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink"
-      >
-        <path
-          fill="null"
-          d="M 0 200 C 365.5 200 365.5 110 731 110 L 731 110 L 731 0 L 0 0 Z"
-          stroke-width="0"
-        ></path>
-        <path
-          fill="null"
-          d="M 730 110 C 1085 110 1085 0 1440 0 L 1440 0 L 1440 0 L 730 0 Z"
-          stroke-width="0"
-        ></path>
-      </svg>
-    </div> -->
-
     <div class="cnt container-1">
       <h2>Challenge 1: Your Age in Days</h2>
       <div class="flx flex-box-container-1">
@@ -52,7 +33,7 @@
           Delete
         </button>
       </div>
-      
+
       <div class="flx flex-box-container-2" id="flex-cat-gen">
         <!-- <img src="https://thecatapi.com/api/images/get?format=src&type=gif&size=small" alt=""> -->
       </div>
@@ -101,13 +82,46 @@
             <option value="green">Green</option>
             <option value="blue">Blue</option>
             <option value="reset">Reset</option>
-            
           </select>
         </form>
         <button class="btn blue">Twitter!</button>
         <button class="btn red">Yahoo!</button>
         <button class="btn yellow">Google!</button>
         <button class="btn green">Facebook!</button>
+      </div>
+    </div>
+    <div class="container-5">
+      <h2>Challenge 5: Blackjack</h2>
+      <h3><span id="blackjack-result">Let's play</span></h3>
+
+      <div class="flex-blackjack-row-1">
+        <div id="your-box">
+          <h2>You: <span id="your-blackjack-result">0</span></h2>
+        </div>
+        <div id="dealer-box">
+          <h2>Dealer: <span id="dealer-blackjack-result">0</span></h2>
+        </div>
+      </div>
+      <div class="flex-blackjack-row-2">
+        <div>
+          <button class="btn blue" id="blackjack-hit-button">Hit</button>
+          <button class="btn yellow" id="blackjack-stand-button">Stand</button>
+          <button class="btn red" id="blackjack-deal-button">Deal</button>
+        </div>
+      </div>
+      <div class="flex-blackjack-row-3">
+        <table>
+          <tr>
+            <th>Wins</th>
+            <th>Losses</th>
+            <th>Draws</th>
+          </tr>
+          <tr>
+            <td><span id="wins">0</span></td>
+            <td><span id="losses">0</span></td>
+            <td><span id="draws">0</span></td>
+          </tr>
+        </table>
       </div>
     </div>
     <script src="assets/js/app.js"></script>
