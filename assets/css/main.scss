@@ -14,6 +14,7 @@ $blue: #5bc0de;
 $yellow: #f0ad4e;
 
 %flx {
+  margin-top: 15px;
   display: flex;
   background-color: $bgcolor;
   border-radius: 50px;
@@ -35,6 +36,14 @@ $yellow: #f0ad4e;
   color: #ffffff;
   border-radius: 0;
 }
+
+%genel {
+  display: flex;
+  padding: 10px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
 // Generally
 .btn {
   border-radius: 28px;
@@ -44,6 +53,7 @@ $yellow: #f0ad4e;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
   border-color: none;
+  border: 1px solid black;
 }
 .cnt {
   @extend %cnt;
@@ -102,54 +112,46 @@ $yellow: #f0ad4e;
 // Comtainer-5
 
 .container-5 {
-  border: 1px solid black;
-  width: 75%;
-  margin: 0 auto;
-  text-align: center;
+  margin-top: 15px;
+  @extend %cnt;
+  border: 2px solid black;
+  h3 {
+    margin-top: 50px;
+    font-size: 24px;
+    background-color: $bgcolor;
+    display: inline;
+    padding: 0 60px;
+    border-radius: 35px;
+  }
   .flex-blackjack-row-1 {
-    display: flex;
-    border: 1px solid black;
-    padding: 10px;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
+    @extend %genel;
     @extend %img;
     div {
-      border: 1px solid black;
+      // border: 1px solid black;
       padding: 10px;
       flex: 1;
       text-align: center;
       height: 350px;
     }
     img {
-      width: 25%;
+      width: 15%;
       padding: 10px;
     }
   }
   .flex-blackjack-row-2 {
-    display: flex;
-    border: 1px solid black;
-    padding: 10px;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
+    @extend %genel;
     @extend %img;
     div {
       padding: 10px;
-      border: 1px solid black;
       button {
-        padding: 10px;
-        // border: 1px solid black;
+        border-radius: 20px;
+        padding: 15px 35px;
+        margin: 0 20px;
       }
     }
   }
   .flex-blackjack-row-3 {
-    display: flex;
-    border: 1px solid black;
-    padding: 10px;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
+    @extend %genel;
     table,
     th,
     td {

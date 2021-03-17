@@ -31,17 +31,13 @@ function silsile() {
 // Challenge3: Rock, Paper, Scissors
 
 function rpsGame(yourChoice) {
-    // console.log(yourChoice)
     var humanChoice, botChoice;
     humanChoice = yourChoice.id;
     botChoice = numberToChoice(randToRpsInt());
-    console.log('Computer Choice:', botChoice);
 
     results = decideWinner(humanChoice, botChoice);
-    console.log(results);
 
     message = finalMessage(results);
-    console.log(message);
 
     rpsFrontEnd(yourChoice.id, botChoice, message);
 }
@@ -118,7 +114,6 @@ for (let i = 0; i < all_buttons.length; i++) {
     copyAllButtons.push(all_buttons[i].classList[1]);
 }
 
-console.log(copyAllButtons);
 
 function buttonColorChange(buttonThingy) {
     if (buttonThingy.value === 'red') {
@@ -346,7 +341,7 @@ function showResult(winner) {
             messageColor = 'red';
             lossSound.play();
         } else {
-            document.querySelector('#draw').textContent = blackjackGame['draw'];
+            document.querySelector('#draws').textContent = blackjackGame['draws'];
             message = 'You Drew!';
             messageColor = 'black';
         }
